@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>sharanvkaur</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ionicons.css" rel="stylesheet" />
+    <link href="assets/js/source/jquery.fancybox.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+    <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div class="navbar navbar-default navbar-fixed-top scroll-me">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png"  alt=""/>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#works">WORK</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#side">SIDE-PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="row scroll-me">
+                    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 text-center ">
+
+                        <h1 data-scroll-reveal="enter from the bottom after 0.2s">Hello! I'm Sharan.
+                        </h1>
+
+                        <h3 data-scroll-reveal="enter from the bottom after 0.4s">
+                          Full Stack Web Developer in love with Design, Data and Code
+                        </h3>
+
+                        <a data-scroll-reveal="enter from the bottom after 0.6s" href="#works" class="btn btn-danger set-bk-clr">Explore Awesomeness</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="works">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2><strong>PORTFOLIO</strong></h2>
+                    Here are some of the projects I've worked on
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-12 pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+                    <div class="categories">
+                        <a href="#" data-filter="*" class="active btn btn-info btn-sm">All</a>
+                        <a href="#" data-filter=".html" class="btn btn-info btn-sm">HTML/CSS/Bootstrap</a>
+                        <a href="#" data-filter=".js" class="btn btn-info btn-sm">Javascript</a>
+                        <a href="#" data-filter=".node" class="btn btn-info btn-sm">Node.JS</a>
+                        <a href="#" data-filter=".ror" class="btn btn-info btn-sm">Ruby on Rails</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="portfolio-div" >
+
+              <div class="col-md-4 col-sm-4 html js">
+                <div class="work-wrapper">
+                  <a class="fancybox" href="#tetris"><img alt="" class="img-responsive" src="assets/img/portfolio/1.jpg"></a>
+                  <div id="tetris" style="display: none">
+                    <img alt="" class="img-responsive" src="assets/img/portfolio/1.jpg">
+                    <h2>Idea: A tetris clone.</h2>
+                    <h3>The Stack: Javascript</h3>
+                    <h4>Live Demo: <a href="https://sharanvkaur.github.io/tetris/">https://sharanvkaur.github.io/tetris/</a></h4>
+                    <h4>View Code: <a href="https://github.com/sharanvkaur/tetris">https://github.com/sharanvkaur/tetris</a></h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 html node">
+                <div class="work-wrapper">
+                  <a class="fancybox" href="#loremblogsum"><img alt="" class="img-responsive" src="assets/img/portfolio/2.jpg"></a>
+                  <div id="loremblogsum" style="display: none">
+                    <img alt="" class="img-responsive" src="assets/img/portfolio/2.jpg">
+                    <h2>Idea: Allow a single user to create multiple themed blogs</h2>
+                    <h3>The Stack: Node.js, Express.js, MongoDB, Bootstrap</h3>
+                    <h4>Live Demo: <a href="https://lorem-blogsum.herokuapp.com/">https://lorem-blogsum.herokuapp.com/</a></h4>
+                    <h4>View Code: <a href="https://github.com/sharanvkaur/lorem-blogsum">https://github.com/sharanvkaur/lorem-blogsum</a></h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 ror">
+                <div class="work-wrapper">
+                  <a class="fancybox" href="#flea"><img alt="" class="img-responsive" src="assets/img/portfolio/3.jpg"></a>
+                  <div id="flea" style="display: none">
+                    <img alt="" class="img-responsive" src="assets/img/portfolio/3.jpg">
+                    <h2>Idea: A flea-market organizing app.
+                    </h2>
+                    <h3>The Stack: Ruby on Rails, PostgresQL, SemanticUI</h3>
+                    <h4>Live Demo: <a href="https://fleastarter.herokuapp.com/">https://fleastarter.herokuapp.com/</a></h4>
+                    <h4>View Code: <a href="https://github.com/sharanvkaur/fleastarter">https://github.com/sharanvkaur/fleastarter</a></h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 html ror">
+                <div class="work-wrapper">
+                  <a class="fancybox" href="#whatsnext"><img alt="" class="img-responsive" src="assets/img/portfolio/4.jpg"></a>
+                  <div id="whatsnext" style="display: none">
+                    <img alt="" class="img-responsive" src="assets/img/portfolio/4.jpg">
+                    <h2>Idea: A social recommendation app for movies</h2>
+                    <h3>The Stack: Ruby on Rails, PostgresQL, OMDb api</h3>
+                    <h4>Live Demo: <a href="http://whatisnext.herokuapp.com/">http://whatisnext.herokuapp.com/</a></h4>
+                    <h4>View Code: <a href="https://github.com/sharanvkaur/whatsnext">https://github.com/sharanvkaur/whatsnext</a></h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+    		<div class="container">
+    			<div class="row text-center">
+    				<div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+    					<h2><strong>MY SKILLS</strong></h2>
+    				</div>
+    			</div>
+      			<div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+      				<div class="col-md-2">
+      					<i class="devicon-html5-plain"></i>
+      					<h4><strong>html 5</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-css3-plain"></i>
+      					<h4><strong>css 3</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-bootstrap-plain"></i>
+      					<h4><strong>bootstrap</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-sass-original"></i>
+      					<h4><strong>sass</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-javascript-plain"></i>
+      					<h4><strong>javascript</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-jquery-plain"></i>
+      					<h4><strong>jquery</strong></h4>
+      				</div>
+    			  </div>
+      			<div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+      				<div class="col-md-2">
+      					<i class="devicon-nodejs-plain"></i>
+      					<h4><strong>nodejs</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-ruby-plain"></i>
+      					<h4><strong>ruby</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-rails-plain"></i>
+      					<h4><strong>rails</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-mongodb-plain"></i>
+      					<h4><strong>mongodb</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-postgresql-plain"></i>
+      					<h4><strong>postgresql</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-react-original"></i>
+      					<h4><strong>react</strong></h4>
+      				</div>
+      			</div>
+      			<div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+      				<div class="col-md-2">
+      					<i class="devicon-git-plain"></i>
+      					<h4><strong>git</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-github-plain"></i>
+      					<h4><strong>github</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-heroku-original"></i>
+      					<h4><strong>heroku</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-atom-original"></i>
+      					<h4><strong>atom</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-bitbucket-plain"></i>
+      					<h4><strong>bitbucket</strong></h4>
+      				</div>
+      				<div class="col-md-2">
+      					<i class="devicon-sourcetree-plain"></i>
+      					<h4><strong>sourcetree</strong></h4>
+      				</div>
+      			</div>
+    		</div>
+    	</section>
+
+    <section id="side">
+        <div class="container">
+
+            <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.2s">
+                <div class="col-md-6 col-md-offset-3 pad-bottom">
+                    <h2><strong>Side Projects</strong></h2>
+                </div>
+            </div>
+
+            <div class="row pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="media">
+                        <a class="media-left" href="http://statement.sg/">
+                            <img src="assets/img/stmt.png" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <a href="http://statement.sg/"><h3 class="media-heading">Statement</h3></a>
+                            We sell fun and witty local tees, hoping to spark conversations and make Singapore a slightly better place!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="media">
+                        <a class="media-left" href="http://hdb-interiors.sharankaur.com/">
+                            <img src="assets/img/hdb.png" alt=""  />
+                        </a>
+                        <div class="media-body">
+                            <a href="http://hdb-interiors.sharankaur.com/"><h3 class="media-heading">HDB-Interiors</h3></a>
+                            A collection of beautiful homes in Singapore, without the terrible copy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <div class="col-md-6 col-md-offset-3 pad-bottom">
+                        <h2 class="pad-bottom"><strong>Get in touch!</strong></h2>
+                        <a href="http://github.com/sharanvkaur/"><i class="ion-social-github-outline"></i></a>
+                        <a href="http://linkedin.com/in/sharanvkaur"><i class="ion-social-linkedin-outline"></i></a>
+                        <a href="http://twitter.com/sharanvkaur"><i class="ion-social-twitter-outline"></i></a>
+                        <a href="mailto:sharanvkaur@gmail.com"><i class="ion-ios-email-outline"></i></a>
+                    </div>
+                </div>
+
+                <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.4s">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                        <h4>sharanvkaur@gmail.com</h4>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy 2017 sharanvkaur.com
+    </footer>
+
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/source/jquery.fancybox.js"></script>
+    <script src="assets/js/jquery.isotope.js"></script>
+    <script src="assets/js/scrollReveal.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
