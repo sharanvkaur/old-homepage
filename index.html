@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!--[if IE]>
@@ -18,7 +18,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+  </head>
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 
     <div class="navbar navbar-default navbar-fixed-top scroll-me">
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.png"  alt=""/>
+                    <img src="assets/img/logo.png"  alt="" class="nav-img"/>
                 </a>
             </div>
             <div class="navbar-collapse collapse">
@@ -49,16 +49,20 @@
         <div class="overlay">
             <div class="container">
                 <div class="row scroll-me">
-                    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 text-center ">
+                    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 text-center">
 
-                        <h1 data-scroll-reveal="enter from the bottom after 0.2s">Hello! I'm Sharan.
+                        <h1>Hello! I'm Sharan.
                         </h1>
 
-                        <h3 data-scroll-reveal="enter from the bottom after 0.4s">
-                          Full Stack Web Developer in love with Design, Data and Code
+                        <h3>
+                          full stack web developer
                         </h3>
 
-                        <a data-scroll-reveal="enter from the bottom after 0.6s" href="#works" class="btn btn-danger set-bk-clr">Explore Awesomeness</a>
+                        <h3 class="pad-bottom">
+                          data | design | code
+                        </h3>
+
+                        <a href="#works" class="btn btn-danger set-bk-clr">Browse Work</a>
                     </div>
                 </div>
             </div>
@@ -71,12 +75,12 @@
             <div class="row text-center">
                 <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
                     <h2><strong>PORTFOLIO</strong></h2>
-                    Here are some of the projects I've worked on
+                    <h4>Here are some of the projects I've worked on</h4>
                 </div>
             </div>
 
             <div class="row text-center">
-                <div class="col-md-12 pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+                <div class="col-md-12 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
                     <div class="categories">
                         <a href="#" data-filter="*" class="active btn btn-info btn-sm">All</a>
                         <a href="#" data-filter=".html" class="btn btn-info btn-sm">HTML/CSS/Bootstrap</a>
@@ -89,9 +93,11 @@
 
             <div class="row text-center" id="portfolio-div" >
 
-              <div class="col-md-4 col-sm-4 html js">
+              <div class="proj col-md-6 col-sm-6 html js">
                 <div class="work-wrapper">
-                  <a class="fancybox" href="#tetris"><img alt="" class="img-responsive" src="assets/img/portfolio/1.jpg"></a>
+                  <a class="fancybox" href="#tetris">
+                    <img alt="" class="img-responsive" src="assets/img/portfolio/1.jpg">
+                  </a>
                   <div id="tetris" style="display: none">
                     <img alt="" class="img-responsive" src="assets/img/portfolio/1.jpg">
                     <h2>Idea: A tetris clone.</h2>
@@ -102,12 +108,12 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-4 html node">
+              <div class="proj col-md-6 col-sm-6 html node">
                 <div class="work-wrapper">
                   <a class="fancybox" href="#loremblogsum"><img alt="" class="img-responsive" src="assets/img/portfolio/2.jpg"></a>
                   <div id="loremblogsum" style="display: none">
                     <img alt="" class="img-responsive" src="assets/img/portfolio/2.jpg">
-                    <h2>Idea: Allow a single user to create multiple themed blogs</h2>
+                    <h2>Idea: Multiple themed blogs per user.</h2>
                     <h3>The Stack: Node.js, Express.js, MongoDB, Bootstrap</h3>
                     <h4>Live Demo: <a href="https://lorem-blogsum.herokuapp.com/">https://lorem-blogsum.herokuapp.com/</a></h4>
                     <h4>View Code: <a href="https://github.com/sharanvkaur/lorem-blogsum">https://github.com/sharanvkaur/lorem-blogsum</a></h4>
@@ -115,7 +121,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-4 ror">
+              <div class="proj col-md-6 col-sm-6 ror">
                 <div class="work-wrapper">
                   <a class="fancybox" href="#flea"><img alt="" class="img-responsive" src="assets/img/portfolio/3.jpg"></a>
                   <div id="flea" style="display: none">
@@ -129,7 +135,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-4 html ror">
+              <div class="proj col-md-6 col-sm-6 html ror">
                 <div class="work-wrapper">
                   <a class="fancybox" href="#whatsnext"><img alt="" class="img-responsive" src="assets/img/portfolio/4.jpg"></a>
                   <div id="whatsnext" style="display: none">
@@ -153,82 +159,78 @@
     					<h2><strong>MY SKILLS</strong></h2>
     				</div>
     			</div>
-      			<div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
-      				<div class="col-md-2">
+      			<div class="row text-center">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-html5-plain"></i>
-      					<h4><strong>html 5</strong></h4>
+      					<h4>html 5</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-css3-plain"></i>
-      					<h4><strong>css 3</strong></h4>
+      					<h4>css 3</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-bootstrap-plain"></i>
-      					<h4><strong>bootstrap</strong></h4>
+      					<h4>bootstrap</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-sass-original"></i>
-      					<h4><strong>sass</strong></h4>
+      					<h4>sass</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-javascript-plain"></i>
-      					<h4><strong>javascript</strong></h4>
+      					<h4>javascript</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-jquery-plain"></i>
-      					<h4><strong>jquery</strong></h4>
+      					<h4>jquery</h4>
       				</div>
-    			  </div>
-      			<div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-nodejs-plain"></i>
-      					<h4><strong>nodejs</strong></h4>
+      					<h4>nodejs</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-ruby-plain"></i>
-      					<h4><strong>ruby</strong></h4>
+      					<h4>ruby</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-rails-plain"></i>
-      					<h4><strong>rails</strong></h4>
+      					<h4>rails</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-mongodb-plain"></i>
-      					<h4><strong>mongodb</strong></h4>
+      					<h4>mongodb</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-postgresql-plain"></i>
-      					<h4><strong>postgresql</strong></h4>
+      					<h4>postgresql</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-react-original"></i>
-      					<h4><strong>react</strong></h4>
+      					<h4>react</h4>
       				</div>
-      			</div>
-      			<div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-git-plain"></i>
-      					<h4><strong>git</strong></h4>
+      					<h4>git</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-github-plain"></i>
-      					<h4><strong>github</strong></h4>
+      					<h4>github</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-heroku-original"></i>
-      					<h4><strong>heroku</strong></h4>
+      					<h4>heroku</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-atom-original"></i>
-      					<h4><strong>atom</strong></h4>
+      					<h4>atom</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-bitbucket-plain"></i>
-      					<h4><strong>bitbucket</strong></h4>
+      					<h4>bitbucket</h4>
       				</div>
-      				<div class="col-md-2">
+      				<div class="col-md-2 col-sm-3 col-xs-4" data-scroll-reveal="enter from the bottom after 0.1s">
       					<i class="devicon-sourcetree-plain"></i>
-      					<h4><strong>sourcetree</strong></h4>
+      					<h4>sourcetree</h4>
       				</div>
       			</div>
     		</div>
@@ -243,7 +245,7 @@
                 </div>
             </div>
 
-            <div class="row pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+            <div class="row" data-scroll-reveal="enter from the bottom after 0.4s">
 
                 <div class="col-md-6 col-sm-6">
                     <div class="media">
@@ -279,13 +281,30 @@
             <div class="container">
                 <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.2s">
                     <div class="col-md-6 col-md-offset-3 pad-bottom">
-                        <h2 class="pad-bottom"><strong>Get in touch!</strong></h2>
-                        <a href="http://github.com/sharanvkaur/"><i class="ion-social-github-outline"></i></a>
-                        <a href="http://linkedin.com/in/sharanvkaur"><i class="ion-social-linkedin-outline"></i></a>
-                        <a href="http://twitter.com/sharanvkaur"><i class="ion-social-twitter-outline"></i></a>
-                        <a href="mailto:sharanvkaur@gmail.com"><i class="ion-ios-email-outline"></i></a>
+                        <h2><strong>Get in touch!</strong></h2>
                     </div>
                 </div>
+
+                <div class="row text-center col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" data-scroll-reveal="enter from the bottom after 0.2s">
+                  <div class="ci col-md-3 col-sm-3 col-xs-6 pad-bottom">
+                    <a href="http://github.com/sharanvkaur/">
+                      <i class="ion-social-github-outline"></i></a>
+                  </div>
+                  <div class="ci col-md-3 col-sm-3 col-xs-6 pad-bottom">
+                    <a href="http://linkedin.com/in/sharanvkaur">
+                      <i class="ion-social-linkedin-outline"></i></a>
+
+                  </div>
+                  <div class="ci col-md-3 col-sm-3 col-xs-6 pad-bottom">
+                    <a href="http://twitter.com/sharanvkaur">
+                      <i class="ion-social-twitter-outline"></i></a>
+
+                  </div>
+                  <div class="ci col-md-3 col-sm-3 col-xs-6 pad-bottom">
+                    <a href="mailto:sharanvkaur@gmail.com">
+                      <i class="ion-ios-email-outline"></i></a>
+
+                  </div>
 
                 <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.4s">
                     <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">

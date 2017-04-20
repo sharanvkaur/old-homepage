@@ -1,19 +1,3 @@
-﻿
-/*=============================================================
-    Authour URL: www.designbootstrap.com
-
-    http://www.designbootstrap.com/
-
-    License: MIT
-
-    http://opensource.org/licenses/MIT
-
-    100% Free To use For Personal And Commercial Use.
-
-    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-
-========================================================  */
-
 $(document).ready(function () {
 
     // FOR SCROLL ANIMATIONS
@@ -32,8 +16,10 @@ $(document).ready(function () {
         $(window).scroll(function () {
             if ($(".navbar").offset().top > 40) {
                 $(".navbar-fixed-top").addClass("navbar-pad-original");
+                $(".navbar-brand").addClass("nav-brand-orig");
             } else {
                 $(".navbar-fixed-top").removeClass("navbar-pad-original");
+                $(".navbar-brand").removeClass("nav-brand-orig");
             }
         });
 

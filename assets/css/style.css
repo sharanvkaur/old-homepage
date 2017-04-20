@@ -5,27 +5,37 @@ body {
   line-height: 25px;
 }
 
+body a {
+  color: #008080;
+}
+
+body a:hover {
+  color: #006666;
+}
+
 .pad-bottom {
   padding-bottom: 40px;
 }
 
 section {
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .btn {
   border-radius: 0px;
+  border-color: #66b2b2;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
+
 }
 
 .set-bk-clr {
-  background-color: #FF2276;
+  background-color: #008080;
 }
 
 .clr-set {
-  color: #FF2276;
+  color: #008080;
 }
 
 .f-big {
@@ -34,8 +44,10 @@ section {
 }
 
 .set-bk-clr:hover {
-  background-color: rgba(107, 1, 41, 0.67);
+  background-color: #006666;
+  border-color: #66b2b2;
 }
+
 /*==============================
 NAVBAR STYLES
 ==============================*/
@@ -44,12 +56,20 @@ NAVBAR STYLES
   font-size: 20px;
   text-transform: uppercase;
 }
+
 .navbar-brand {
-padding:0px;
+  padding:0px;
 }
 
 .navbar-brand img {
   height:50px;
+  transition: all 0.8s ease-in-out;
+}
+
+.nav-brand-orig img {
+  height: 30px;
+  margin-top: 10px;
+  transition: all 0.8s ease-in-out;
 }
 
 .navbar-default .navbar-toggle {
@@ -70,12 +90,12 @@ padding:0px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #000;
+    color: #66b2b2;
     text-decoration: none;
 }
 
 .navbar-default {
-  background-color: #FF2276;
+  background-color: #004c4c;
   border-color: transparent;
 }
 
@@ -87,19 +107,18 @@ padding:0px;
 }
 
 .navbar-pad-original {
-  padding: 0px;
+  padding: 0px 0px 0px 10px;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #000;
-  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
-
 
 /* =============================================================
 HEADER SECTION STYLES
@@ -112,29 +131,30 @@ HEADER SECTION STYLES
   background-size: cover;
   -moz-background-size: cover;
   background-attachment: fixed;
-  color: #fff;
+  color: #66b2b2;
 }
 
 #header .overlay {
-  background-color: rgba(3, 3, 3, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   min-height: 700px;
 }
 
 #header h1 {
-  line-height: 60px;
+  line-height: 55px;
   font-size: 45px;
   font-weight: 900;
-  padding-top: 260px;
-  padding-bottom: 35px;
-  color: #FF2276;
+  padding-top: 220px;
+  padding-bottom: 20px;
+  color: #006666;
 }
-
 
 #header h3 {
   line-height: 30px;
-  font-size: 24px;
-  padding-bottom: 40px;
-  /*text-transform: uppercase;*/
+  font-size: 28px;
+}
+
+#header .btn {
+  margin-top: 10px;
 }
 
 /* =============================================================
@@ -142,8 +162,14 @@ PORTFOLIO SECTION STYLES
 ============================================================ */
 
 .categories a.active {
-  background-color: #FF2276;
-  border: 2px solid #FF2276;
+  background-color: #006666;
+}
+.btn-info {
+  background-color: #66b2b2;
+  margin-bottom: 5px;
+}
+.btn-info:hover {
+  background-color: #008080;
 }
 
 .isotope .isotope-item {
@@ -153,15 +179,21 @@ PORTFOLIO SECTION STYLES
 }
 
 #works .work-wrapper {
-  border: 2px solid #FF2276;
-  padding: 2px;
+  width: 100%;
+  border: 2px solid #66b2b2;
+  padding: 4px;
   margin: 5px 5px 10px 5px;
+}
+
+#works .work-wrapper:hover {
+  border: 4px solid #006666;
+  padding: 2px;
 }
 
 #works img {
   filter: gray; /* FOR IE6-9 */
-  -webkit-filter: grayscale(1); /* FOR Google Chrome, Safari 6+ and  Opera 15+ */
-  opacity: 0.8;
+  -webkit-filter: grayscale(0.8); /* FOR Google Chrome, Safari 6+ and  Opera 15+ */
+  opacity: 1;
 }
 
 #works img:hover {
@@ -174,47 +206,45 @@ PORTFOLIO SECTION STYLES
   SKILLS STYLES
 ==================================*/
 #skills {
-  background-color: rgba(237, 237, 237, 1);
+  background-color: rgba(178, 216, 216, 0.5);
 }
 
 #skills i {
   font-size: 80px;
-  padding: 30px;
-  color: #FF2276;
+  color: #333333;
 }
 
 #skills h4 {
-  padding-bottom: 5px;
-  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 5px;
 }
-
 
 /* =============================================================
 SIDE PROJECT SECTION STYLES
 ============================================================ */
 
 #side a {
-    color: #ff2276;
+    color: #008080;
     text-decoration: none;
 }
 
 #side a:hover {
-    color: #000;
+    color: #004c4c;
     text-decoration: none;
 }
 
 .media img {
-  margin-right: 40px;
+  margin-right: 25px;
   max-height: 150px;
   margin-bottom: 20px;
-  border: 2px solid #FF2276;
+  border: 2px solid #008080;
 }
 
 /* =============================================================
 CONTACT SECTION STYLES
 ============================================================ */
 #contact {
-  background: url(../img/clients.jpg) no-repeat center center;
+  background: url(../img/contact.jpg) no-repeat center center;
   padding: 0;
   -webkit-background-size: cover;
   background-size: cover;
@@ -223,15 +253,22 @@ CONTACT SECTION STYLES
 }
 #contact i {
     font-size: 80px;
-    padding: 30px;
-    color: #FF2276;
+    color: #008080;
+
 }
+#contact i:hover {
+    color: #b2d8d8;
+}
+
+.ci {
+    z-index: 1;
+}
+
 #contact .overlay {
-    background-color: rgba(0,0,0,0.9);
-    padding-top: 90px;
+    background-color: rgba(0,0,0,0.7);
     min-height: 300px;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 100px;
 }
 
@@ -239,13 +276,11 @@ CONTACT SECTION STYLES
 FOOTER SECTION STYLES
 ============================================================ */
 footer {
-  padding: 20px;
-  font-size: 15px;
+  color: #b2d8d8;
+  padding: 15px;
+  font-size: 12px;
   text-align: center;
-  font-weight: 900;
-  background-color: rgba(237, 237, 237, 1);
-}
-footer a, footer a:hover {
-    color: #000;
-    text-decoration: none;
+  font-weight: 200;
+  background-color: rgba(0, 76, 76, 0.9);
+  text-transform: uppercase;
 }
